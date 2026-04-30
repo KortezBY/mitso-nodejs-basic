@@ -11,7 +11,6 @@ const copy = async () => {
 
     try {
         await access(src);
-        // Проверим, что папка назначения ещё не существует
         try {
             await access(dest);
             throw new Error('FS operation failed');
